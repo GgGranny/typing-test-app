@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+body {
+    @apply bg-[#1c2321] text-[#eef1ef];
+
+}
+
+.correct {
+    @apply text-white;
+}
+
+.wrong {
+    @apply text-red-500;
+}
+
+.appendedChild {
+    @apply text-red-400;
+}
+
+.active {
+    @apply text-blue-200;
+}
+
+.spacer {
+    @apply h-4 w-[6px] rounded bg-gray-600;
+}
+
+.status-label {
+    @apply text-lg font-normal text-[#7c967e];
+
+}
+
+.status {
+    @apply text-2xl text-[#86BBD8];
+}
+
+@theme {
+    --animate-blink: blinking 1s ease-in-out infinite;
+
+    @keyframes blinking {
+
+        0%,
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
